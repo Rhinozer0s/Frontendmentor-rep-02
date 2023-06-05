@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: hsl(217, 54%, 11%);
+  padding: 5vw;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  display: grid;
+  gap: 1.8rem;
+  max-width: 33rem;
+  margin-inline: auto;
+  padding: 2.5rem;
+  border: 0;
+  border-radius: 2rem;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.57);
+}
+.card .img-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border: 0;
+  border-radius: 1rem;
+}
+.card .img-container::after {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: url(../images/icon-view.svg);
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+}
+.card .img-container:hover::after {
+  opacity: 1;
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+.card .card--name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.card .card--discription {
+  color: hsl(215, 51%, 70%);
+}
+.card .card--paraflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card--cost {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 11px auto;
+  gap: 1rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+.card .card--timeleft {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 17px auto;
+  gap: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+.card .card--line {
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+  height: 0.1rem;
+}
+.card .card--footer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3rem auto;
+  gap: 1.5rem;
+  padding: 2rem-;
+  color: hsl(215, 51%, 70%);
+}
+.card .card--footer .avatar-img {
+  border: solid 0.1rem hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+.card .card--footer .card--author {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.card .card--name:hover, .card .card--name:focus,
+.card .card--author:hover, .card .card--author:focus {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+
+/*# sourceMappingURL=style.css.map */
