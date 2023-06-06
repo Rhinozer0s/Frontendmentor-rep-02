@@ -41,6 +41,7 @@ body {
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.57);
 }
 .card .img-container {
+  display: block;
   position: relative;
   overflow: hidden;
   aspect-ratio: 1/1;
