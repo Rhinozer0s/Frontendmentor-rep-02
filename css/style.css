@@ -69,6 +69,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
+  text-decoration: none;
 }
 .card .card--discription {
   color: hsl(215, 51%, 70%);
